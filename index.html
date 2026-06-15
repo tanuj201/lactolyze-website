@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lactolyze | Precision Milk Analysis Redefined</title>
+    <meta name="description" content="Meet LactoCheck Pro—the ultimate all-in-one analyzer delivering instant, lab-grade accuracy for fat, SNF, protein, and adulteration detection.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Lactolyze Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#parameters">Parameters</a></li>
+                <li><a href="#audience">Target Audience</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary nav-cta">Request a Demo</a>
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Precision Milk Analysis.<br><span class="text-gradient">Redefined.</span></h1>
+                <p class="hero-subtitle">Meet LactoCheck Pro—the ultimate all-in-one analyzer delivering instant, lab-grade accuracy for fat, SNF, protein, and adulteration detection.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                    <a href="#video" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        Watch Product Video
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-value">30s</span><span class="stat-label">Analysis Time</span></div>
+                    <div class="stat"><span class="stat-value">99.9%</span><span class="stat-label">Accuracy Rate</span></div>
+                    <div class="stat"><span class="stat-value">8+</span><span class="stat-label">Parameters</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-wrapper glass-panel">
+                    <div class="scanner-line"></div>
+                    <img src="assets/product.jpg" alt="LactoCheck Pro Machine" class="product-render">
+                    <div class="floating-badge badge-1">
+                        <div class="pulse-dot green"></div> Status: PASS
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <div class="pulse-dot blue"></div> Syncing to Cloud
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section id="features" class="value-prop">
+            <div class="section-header">
+                <h2>Why <span class="text-gradient">Lactolyze?</span></h2>
+                <p>Engineered for the demands of modern dairy management.</p>
+            </div>
+            <div class="grid-3-col">
+                <div class="glass-card feature-card">
+                    <div class="icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Instant Results</h3>
+                    <p>Experience real-time testing in under 30 seconds. Maximize throughput at collection centers without compromising accuracy.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Unmatched Accuracy</h3>
+                    <p>Advanced ultrasonic and optical sensor technology ensures lab-grade precision, eliminating manual errors and disputes.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3>Rugged & Reliable</h3>
+                    <p>Built tough for harsh environments. From dusty collection points to sterile labs, the LactoCheck Pro delivers consistent performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8 Parameters Simulator -->
+        <section id="parameters" class="parameters-section">
+            <div class="section-header text-center">
+                <h2>The 8 Core Measurement Parameters</h2>
+                <p>Select a parameter to see how LactoCheck Pro processes the data in real-time.</p>
+            </div>
+            <div class="simulator-container">
+                <div class="parameters-grid">
+                    <!-- Interactive parameter buttons -->
+                    <button class="param-btn active" data-param="fat">
+                        <span class="param-icon">🥛</span>
+                        <div class="param-info">
+                            <span class="param-name">Fat Content</span>
+                            <span class="param-desc">Fair pricing measurement</span>
+                        </div>
+                    </button>
+                    <button class="param-btn" data-param="snf">
+                        <span class="param-icon">📊</span>
+                        <div class="param-info">
+                            <span class="param-name">SNF</span>
+                            <span class="param-desc">Instant quality grading</span>
+                        </div>
+                    </button>
+                    <button class="param-btn" data-param="protein">
+                        <span class="param-icon">🥩</span>
+                        <div class="param-info">
+                            <span class="param-name">Protein</span>
+                            <span class="param-desc">Nutritional tracking</span>
+                        </div>
+                    </button>
+                    <button class="param-btn" data-param="ph">
+                        <span class="param-icon">🧪</span>
+                        <div class="param-info">
+                            <span class="param-name">pH Levels</span>
+                            <span class="param-desc">Real-time acidity</span>
+                        </div>
+                    </button>
+                    <button class="param-btn" data-param="urea">
+                        <span class="param-icon">🐄</span>
+                        <div class="param-info">
+                            <span class="param-name">Urea</span>
+                            <span class="param-desc">Herd health detection</span>
+                        </div>
+                    </button>
+                    <button class="param-btn" data-param="conductivity">
+                        <span class="param-icon">⚡</span>
+                        <div class="param-info">
+                            <span class="param-name">Conductivity</span>
+                            <span class="param-desc">Mastitis screening</span>
+                        </div>
+                    </button>
+                    <button class="param-btn" data-param="water">
+                        <span class="param-icon">💧</span>
+                        <div class="param-info">
+                            <span class="param-name">Added Water</span>
+                            <span class="param-desc">Dilution percentage</span>
+                        </div>
+                    </button>
+                    <button class="param-btn alert" data-param="adulteration">
+                        <span class="param-icon">⚠️</span>
+                        <div class="param-info">
+                            <span class="param-name">Adulteration</span>
+                            <span class="param-desc">Synthetic screening</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="simulator-display glass-panel">
+                    <div class="sim-header">
+                        <div class="sim-title">LactoCheck Pro <span class="sim-status">Online</span></div>
+                        <div class="sim-time" id="sim-time">10:42 AM</div>
+                    </div>
+                    <div class="sim-body">
+                        <div class="sim-primary-metric">
+                            <h4 id="sim-metric-name">Fat Content</h4>
+                            <div class="sim-value-wrap">
+                                <span class="sim-value" id="sim-metric-value">3.82</span><span class="sim-unit" id="sim-metric-unit">%</span>
+                            </div>
+                            <div class="sim-progress-bar">
+                                <div class="sim-progress-fill" id="sim-progress" style="width: 76%;"></div>
+                            </div>
+                        </div>
+                        <div class="sim-details">
+                            <p id="sim-metric-desc">Highly accurate measurement for fair pricing. Current sample is within optimal premium range.</p>
+                            <div class="sim-tags">
+                                <span class="badge badge-success" id="sim-badge">Premium Grade</span>
+                                <span class="badge badge-outline">Sample #4902</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sim-footer">
+                        <span>Analysis complete in 28.4s</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience -->
+        <section id="audience" class="audience-section">
+            <div class="section-header">
+                <h2>Designed for the <span class="text-gradient">Entire Dairy Ecosystem</span></h2>
+            </div>
+            <div class="split-columns">
+                <div class="audience-card glass-panel">
+                    <div class="card-icon blue-bg">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Dairy Cooperatives &<br>Collection Centers</h3>
+                    <ul class="benefit-list">
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> High-speed processing for large volumes</li>
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Automated, transparent fair payout calculations</li>
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Eliminates manual logging errors</li>
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Farmer-facing digital receipts via SMS/App</li>
+                    </ul>
+                </div>
+                <div class="audience-card glass-panel">
+                    <div class="card-icon teal-bg">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Processing Plants &<br>Quality Labs</h3>
+                    <ul class="benefit-list">
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Strict compliance and deep data logging</li>
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> API integration with enterprise ERP systems</li>
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Early detection of microscopic adulterants</li>
+                        <li><svg class="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Automated calibration and health checks</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data & Connectivity -->
+        <section id="connectivity" class="connectivity-section dark-bg">
+            <div class="connectivity-wrapper">
+                <div class="connectivity-content">
+                    <h2>Smart Data <span class="text-gradient">Integration</span></h2>
+                    <p>The LactoCheck Pro isn't just an analyzer; it's an edge-computing device. Your milk data is securely processed, encrypted, and synced instantly.</p>
+                    <div class="conn-features">
+                        <div class="conn-item">
+                            <span class="icon-box">📶</span>
+                            <div>
+                                <h4>Built-in Wi-Fi & Bluetooth</h4>
+                                <p>Seamless wireless connection out of the box.</p>
+                            </div>
+                        </div>
+                        <div class="conn-item">
+                            <span class="icon-box">☁️</span>
+                            <div>
+                                <h4>Secure Cloud Storage</h4>
+                                <p>Unlimited historical data access on AWS-backed servers.</p>
+                            </div>
+                        </div>
+                        <div class="conn-item">
+                            <span class="icon-box">📱</span>
+                            <div>
+                                <h4>Mobile App Dashboard</h4>
+                                <p>Monitor real-time analytics from anywhere.</p>
+                            </div>
+                        </div>
+                        <div class="conn-item">
+                            <span class="icon-box">🔗</span>
+                            <div>
+                                <h4>ERP / API Integration</h4>
+                                <p>Plug-and-play with existing dairy management software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="connectivity-visual">
+                    <div class="dashboard-mockup glass-panel">
+                        <div class="mockup-header">
+                            <div class="mac-btns"><span></span><span></span><span></span></div>
+                            <div class="mockup-title">Lactolyze Cloud Portal</div>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="chart-area">
+                                <!-- Abstract CSS Chart -->
+                                <div class="bar-chart">
+                                    <div class="bar" style="height: 40%"></div>
+                                    <div class="bar" style="height: 60%"></div>
+                                    <div class="bar" style="height: 35%"></div>
+                                    <div class="bar" style="height: 80%"></div>
+                                    <div class="bar" style="height: 65%"></div>
+                                    <div class="bar" style="height: 90%"></div>
+                                    <div class="bar" style="height: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="metrics-area">
+                                <div class="metric-mini"><span>Total Vol.</span><strong>12,450L</strong></div>
+                                <div class="metric-mini"><span>Avg Fat</span><strong>3.8%</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Capture & Footer -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container glass-panel">
+                <div class="contact-text">
+                    <h2>Ready to upgrade your laboratory precision?</h2>
+                    <p>Request a personalized demo and pricing quote. Our experts will help configure the right solution for your volume.</p>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="leadForm" class="lead-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" required placeholder="Alpine Dairies">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" required placeholder="john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="fleet">Estimated Fleet Size (Number of Devices)</label>
+                            <select id="fleet" required>
+                                <option value="" disabled selected>Select size</option>
+                                <option value="1-5">1 - 5 Devices</option>
+                                <option value="6-20">6 - 20 Devices</option>
+                                <option value="21-50">21 - 50 Devices</option>
+                                <option value="50+">50+ Devices</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Request a Demo</button>
+                        <div id="formSuccess" class="form-success hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Request received! Our team will contact you within 24 hours.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Lactolyze Logo" class="footer-logo">
+                <p>The Data Behind the Dairy. Redefining precision milk analysis through smart, edge-computing hardware.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#parameters">Parameters</a>
+                    <a href="#connectivity">Software Integrations</a>
+                </div>
+                <div class="link-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lactolyze Inc. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
