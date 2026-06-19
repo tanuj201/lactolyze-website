@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace | Lactolyze</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Lactolyze Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li id="nav-auth-link"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1 class="page-title">Marketplace</h1>
+        <p>Purchase the ultimate all-in-one milk analyzers and accessories.</p>
+    </header>
+
+    <main>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="assets/product.jpg" alt="LactoCheck Pro">
+                </div>
+                <div class="product-info">
+                    <h3>LactoCheck Pro</h3>
+                    <p class="text-secondary">Flagship 8-parameter milk analyzer with built-in cloud sync.</p>
+                    <div class="product-price">$2,499.00</div>
+                    <button class="btn btn-primary btn-block buy-btn" data-product="LactoCheck Pro">Buy Now</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img" style="background: #0F172A;">
+                    <div style="font-size: 4rem;">🧪</div>
+                </div>
+                <div class="product-info">
+                    <h3>Calibration Kit</h3>
+                    <p class="text-secondary">Standard 3-month calibration fluid set for precise measurements.</p>
+                    <div class="product-price">$149.00</div>
+                    <button class="btn btn-primary btn-block buy-btn" data-product="Calibration Kit">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img" style="background: #E2E8F0;">
+                    <div style="font-size: 4rem;">🔋</div>
+                </div>
+                <div class="product-info">
+                    <h3>Field Battery Pack</h3>
+                    <p class="text-secondary">Extended 12-hour battery for remote collection centers.</p>
+                    <div class="product-price">$299.00</div>
+                    <button class="btn btn-primary btn-block buy-btn" data-product="Field Battery Pack">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom" style="border-top: none;">
+            <p>&copy; 2026 Lactolyze Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mock Modal -->
+    <div id="buy-modal" class="buy-modal hidden">
+        <div class="buy-modal-content">
+            <h2 style="color: var(--dairy-blue-900); margin-bottom: 16px;">Purchase Successful!</h2>
+            <p id="modal-desc" style="margin-bottom: 24px;">Thank you for ordering.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="marketplace.js"></script>
+</body>
+</html>

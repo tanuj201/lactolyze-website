@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Lactolyze</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Lactolyze Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="auth-container glass-panel">
+            <h2 style="margin-bottom: 24px;">Welcome to Lactolyze</h2>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="tab-login">Sign In</button>
+                <button class="auth-tab" id="tab-register">Create Account</button>
+            </div>
+            
+            <form id="auth-form" class="auth-form">
+                <div class="form-group" id="name-group" style="display: none;">
+                    <label>Full Name</label>
+                    <input type="text" id="auth-name" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Email / Username</label>
+                    <input type="text" id="auth-username" required placeholder="name@company.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="auth-password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="auth-submit">Sign In</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script>
+        const tabLogin = document.getElementById('tab-login');
+        const tabRegister = document.getElementById('tab-register');
+        const nameGroup = document.getElementById('name-group');
+        const authSubmit = document.getElementById('auth-submit');
+        const authForm = document.getElementById('auth-form');
+        
+        let isRegister = false;
+
+        tabLogin.addEventListener('click', () => {
+            isRegister = false;
+            tabLogin.classList.add('active');
+            tabRegister.classList.remove('active');
+            nameGroup.style.display = 'none';
+            authSubmit.textContent = 'Sign In';
+            document.getElementById('auth-name').removeAttribute('required');
+        });
+
+        tabRegister.addEventListener('click', () => {
+            isRegister = true;
+            tabRegister.classList.add('active');
+            tabLogin.classList.remove('active');
+            nameGroup.style.display = 'block';
+            authSubmit.textContent = 'Create Account';
+            document.getElementById('auth-name').setAttribute('required', 'true');
+        });
+
+        authForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userIdentifier = isRegister ? document.getElementById('auth-name').value : document.getElementById('auth-username').value;
+            // Mock login by saving username/email to localStorage
+            login(userIdentifier.split('@')[0]); // Use first part of email or name as display name
+        });
+    </script>
+</body>
+</html>

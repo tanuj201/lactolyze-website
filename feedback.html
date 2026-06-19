@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Lactolyze</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Lactolyze Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li id="nav-auth-link"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1 class="page-title">Community Feedback</h1>
+        <p>Read what our partners are saying or submit your own experience.</p>
+    </header>
+
+    <main class="feedback-container">
+        
+        <div id="login-prompt" class="login-prompt hidden">
+            <h3 style="margin-bottom: 8px;">Want to share your experience?</h3>
+            <p>Please <a href="login.html" style="color: var(--accent-teal); text-decoration: underline;">log in</a> to submit feedback.</p>
+        </div>
+
+        <div id="feedback-form-section" class="feedback-form-card hidden">
+            <h3 style="margin-bottom: 16px;">Submit Your Feedback</h3>
+            <form id="feedback-form">
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label>Your Review</label>
+                    <textarea id="feedback-text" rows="4" required placeholder="Tell us how the LactoCheck Pro is helping your business..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #E2E8F0; resize: vertical; font-family: inherit; margin-top: 8px;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Post Feedback</button>
+            </form>
+        </div>
+
+        <div class="feedback-list" id="feedback-list">
+            <!-- Feedback items will be rendered here -->
+        </div>
+
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>
